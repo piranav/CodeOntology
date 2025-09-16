@@ -1,0 +1,591 @@
+@prefix code: <http://codeontology.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://codeontology.org/> a owl:Ontology ;
+    rdfs:label "Code Analysis Ontology" ;
+    rdfs:comment "Comprehensive ontology for representing code structure, relationships, and semantics" ;
+    owl:versionInfo "1.0" .
+
+# ========== Core Classes ==========
+
+code:CodeEntity a owl:Class ;
+    rdfs:label "Code Entity" ;
+    rdfs:comment "Base class for all code elements" .
+
+code:Module a owl:Class ;
+    rdfs:subClassOf code:CodeEntity ;
+    rdfs:label "Module" ;
+    rdfs:comment "A source file or module containing code" .
+
+code:Function a owl:Class ;
+    rdfs:subClassOf code:CodeEntity ;
+    rdfs:label "Function" ;
+    rdfs:comment "Function declaration or expression" .
+
+code:Method a owl:Class ;
+    rdfs:subClassOf code:Function ;
+    rdfs:label "Method" ;
+    rdfs:comment "Class method" .
+
+code:Class a owl:Class ;
+    rdfs:subClassOf code:CodeEntity ;
+    rdfs:label "Class" ;
+    rdfs:comment "Class declaration" .
+
+code:Interface a owl:Class ;
+    rdfs:subClassOf code:CodeEntity ;
+    rdfs:label "Interface" ;
+    rdfs:comment "Interface declaration (TypeScript)" .
+
+code:Variable a owl:Class ;
+    rdfs:subClassOf code:CodeEntity ;
+    rdfs:label "Variable" ;
+    rdfs:comment "Variable declaration" .
+
+code:Property a owl:Class ;
+    rdfs:subClassOf code:Variable ;
+    rdfs:label "Property" ;
+    rdfs:comment "Class property" .
+
+code:Parameter a owl:Class ;
+    rdfs:subClassOf code:Variable ;
+    rdfs:label "Parameter" ;
+    rdfs:comment "Function or method parameter" .
+
+code:Import a owl:Class ;
+    rdfs:subClassOf code:CodeEntity ;
+    rdfs:label "Import" ;
+    rdfs:comment "Import statement" .
+
+code:Export a owl:Class ;
+    rdfs:subClassOf code:CodeEntity ;
+    rdfs:label "Export" ;
+    rdfs:comment "Export statement" .
+
+code:CallExpression a owl:Class ;
+    rdfs:subClassOf code:CodeEntity ;
+    rdfs:label "Call Expression" ;
+    rdfs:comment "Function call expression" .
+
+code:Type a owl:Class ;
+    rdfs:label "Type" ;
+    rdfs:comment "Type information" .
+
+code:SourceLocation a owl:Class ;
+    rdfs:label "Source Location" ;
+    rdfs:comment "Location in source code" .
+
+# ========== Source Location Model Extensions ==========
+
+code:Blob a owl:Class ;
+    rdfs:label "Blob" ;
+    rdfs:comment "Immutable git-pinned or content-addressed file blob" .
+
+code:SourceSpan a owl:Class ;
+    rdfs:label "SourceSpan" ;
+    rdfs:comment "Byte and line span within a blob" .
+
+code:Snippet a owl:Class ;
+    rdfs:label "Snippet" ;
+    rdfs:comment "Short preview text for a span" .
+
+# ========== Object Properties ==========
+
+# Structural relationships
+code:contains a owl:ObjectProperty ;
+    rdfs:domain code:Module ;
+    rdfs:range code:CodeEntity ;
+    rdfs:label "contains" ;
+    rdfs:comment "Module contains a code entity" .
+
+code:defines a owl:ObjectProperty ;
+    rdfs:domain code:Module ;
+    rdfs:range code:CodeEntity ;
+    rdfs:label "defines" ;
+    rdfs:comment "Module defines a code entity" .
+
+code:declaredIn a owl:ObjectProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range code:Module ;
+    rdfs:label "declared in" ;
+    rdfs:comment "Entity is declared in module" ;
+    owl:inverseOf code:defines .
+
+# Function relationships
+code:calls a owl:ObjectProperty ;
+    rdfs:domain code:Function ;
+    rdfs:range code:Function ;
+    rdfs:label "calls" ;
+    rdfs:comment "Function calls another function" .
+
+code:calledBy a owl:ObjectProperty ;
+    rdfs:domain code:Function ;
+    rdfs:range code:Function ;
+    rdfs:label "called by" ;
+    rdfs:comment "Function is called by another function" ;
+    owl:inverseOf code:calls .
+
+code:hasParameter a owl:ObjectProperty ;
+    rdfs:domain code:Function ;
+    rdfs:range code:Parameter ;
+    rdfs:label "has parameter" ;
+    rdfs:comment "Function has parameter" .
+
+code:returns a owl:ObjectProperty ;
+    rdfs:domain code:Function ;
+    rdfs:range code:Type ;
+    rdfs:label "returns" ;
+    rdfs:comment "Function returns type" .
+
+# Class relationships
+code:extends a owl:ObjectProperty ;
+    rdfs:domain code:Class ;
+    rdfs:range code:Class ;
+    rdfs:label "extends" ;
+    rdfs:comment "Class extends another class" .
+
+code:implements a owl:ObjectProperty ;
+    rdfs:domain code:Class ;
+    rdfs:range code:Interface ;
+    rdfs:label "implements" ;
+    rdfs:comment "Class implements interface" .
+
+code:hasMethod a owl:ObjectProperty ;
+    rdfs:domain code:Class ;
+    rdfs:range code:Method ;
+    rdfs:label "has method" ;
+    rdfs:comment "Class has method" .
+
+code:hasProperty a owl:ObjectProperty ;
+    rdfs:domain code:Class ;
+    rdfs:range code:Property ;
+    rdfs:label "has property" ;
+    rdfs:comment "Class has property" .
+
+code:memberOf a owl:ObjectProperty ;
+    rdfs:domain [ owl:unionOf ( code:Method code:Property ) ] ;
+    rdfs:range code:Class ;
+    rdfs:label "member of" ;
+    rdfs:comment "Method or property is member of class" ;
+    owl:inverseOf code:hasMethod, code:hasProperty .
+
+# Variable relationships
+code:references a owl:ObjectProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range code:Variable ;
+    rdfs:label "references" ;
+    rdfs:comment "Entity references variable" .
+
+code:referencedBy a owl:ObjectProperty ;
+    rdfs:domain code:Variable ;
+    rdfs:range code:CodeEntity ;
+    rdfs:label "referenced by" ;
+    rdfs:comment "Variable is referenced by entity" ;
+    owl:inverseOf code:references .
+
+code:hasType a owl:ObjectProperty ;
+    rdfs:domain [ owl:unionOf ( code:Variable code:Parameter code:Function ) ] ;
+    rdfs:range code:Type ;
+    rdfs:label "has type" ;
+    rdfs:comment "Entity has type" .
+
+# Import/Export relationships
+code:imports a owl:ObjectProperty ;
+    rdfs:domain code:Module ;
+    rdfs:range code:Module ;
+    rdfs:label "imports" ;
+    rdfs:comment "Module imports from another module" .
+
+code:exports a owl:ObjectProperty ;
+    rdfs:domain code:Module ;
+    rdfs:range code:CodeEntity ;
+    rdfs:label "exports" ;
+    rdfs:comment "Module exports entity" .
+
+code:importedBy a owl:ObjectProperty ;
+    rdfs:domain code:Module ;
+    rdfs:range code:Module ;
+    rdfs:label "imported by" ;
+    rdfs:comment "Module is imported by another module" ;
+    owl:inverseOf code:imports .
+
+code:exportedBy a owl:ObjectProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range code:Module ;
+    rdfs:label "exported by" ;
+    rdfs:comment "Entity is exported by module" ;
+    owl:inverseOf code:exports .
+
+# Call expression relationships
+code:callsFunction a owl:ObjectProperty ;
+    rdfs:domain code:CallExpression ;
+    rdfs:range code:Function ;
+    rdfs:label "calls function" ;
+    rdfs:comment "Call expression invokes function" .
+
+code:calledAt a owl:ObjectProperty ;
+    rdfs:domain code:Function ;
+    rdfs:range code:CallExpression ;
+    rdfs:label "called at" ;
+    rdfs:comment "Function is called at expression" ;
+    owl:inverseOf code:callsFunction .
+
+code:madeBy a owl:ObjectProperty ;
+    rdfs:domain code:CallExpression ;
+    rdfs:range code:Function ;
+    rdfs:label "made by" ;
+    rdfs:comment "Call expression is made by function" .
+
+# Location relationship
+code:locatedAt a owl:ObjectProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range code:SourceLocation ;
+    rdfs:label "located at" ;
+    rdfs:comment "Entity is located at source location" .
+
+# Source span relations
+code:hasSourceSpan a owl:ObjectProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range code:SourceSpan ;
+    rdfs:label "has source span" ;
+    rdfs:comment "Entity has an exact source span" .
+
+code:inBlob a owl:ObjectProperty ;
+    rdfs:domain code:SourceSpan ;
+    rdfs:range code:Blob ;
+    rdfs:label "in blob" ;
+    rdfs:comment "Source span is within blob" .
+
+# ========== Data Properties ==========
+
+# Basic properties
+code:hasName a owl:DatatypeProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range xsd:string ;
+    rdfs:label "has name" ;
+    rdfs:comment "Name of the code entity" .
+
+code:hasDocstring a owl:DatatypeProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range xsd:string ;
+    rdfs:label "has docstring" ;
+    rdfs:comment "Documentation string" .
+
+code:hasBodyHash a owl:DatatypeProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range xsd:string ;
+    rdfs:label "has body hash" ;
+    rdfs:comment "Hash of entity body for change detection" .
+
+code:hasURI a owl:DatatypeProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "has URI" ;
+    rdfs:comment "Unique identifier URI" .
+
+# Location properties
+code:filePath a owl:DatatypeProperty ;
+    rdfs:domain code:SourceLocation ;
+    rdfs:range xsd:string ;
+    rdfs:label "file path" ;
+    rdfs:comment "Path to source file" .
+
+code:lineNumber a owl:DatatypeProperty ;
+    rdfs:domain code:SourceLocation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "line number" ;
+    rdfs:comment "Line number in source" .
+
+code:columnNumber a owl:DatatypeProperty ;
+    rdfs:domain code:SourceLocation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "column number" ;
+    rdfs:comment "Column number in source" .
+
+code:endLineNumber a owl:DatatypeProperty ;
+    rdfs:domain code:SourceLocation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "end line number" ;
+    rdfs:comment "End line number" .
+
+code:endColumnNumber a owl:DatatypeProperty ;
+    rdfs:domain code:SourceLocation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "end column number" ;
+    rdfs:comment "End column number" .
+
+# Source span data
+code:byteStart a owl:DatatypeProperty ;
+    rdfs:domain code:SourceSpan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "byte start" ;
+    rdfs:comment "Start byte offset within blob" .
+
+code:byteEnd a owl:DatatypeProperty ;
+    rdfs:domain code:SourceSpan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "byte end" ;
+    rdfs:comment "End byte offset within blob" .
+
+code:lineStart a owl:DatatypeProperty ;
+    rdfs:domain code:SourceSpan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "line start" ;
+    rdfs:comment "Start line number (1-based)" .
+
+code:lineEnd a owl:DatatypeProperty ;
+    rdfs:domain code:SourceSpan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "line end" ;
+    rdfs:comment "End line number (1-based)" .
+
+code:contentHash a owl:DatatypeProperty ;
+    rdfs:domain code:SourceSpan ;
+    rdfs:range xsd:string ;
+    rdfs:label "content hash" ;
+    rdfs:comment "SHA-256 hash of the span text" .
+
+code:astHash a owl:DatatypeProperty ;
+    rdfs:domain code:SourceSpan ;
+    rdfs:range xsd:string ;
+    rdfs:label "AST hash" ;
+    rdfs:comment "SHA-256 hash of normalized AST for the span" .
+
+code:language a owl:DatatypeProperty ;
+    rdfs:domain code:Blob ;
+    rdfs:range xsd:string ;
+    rdfs:label "language" ;
+    rdfs:comment "Language identifier for blob" .
+
+code:previewText a owl:DatatypeProperty ;
+    rdfs:domain code:SourceSpan ;
+    rdfs:range xsd:string ;
+    rdfs:label "preview text" ;
+    rdfs:comment "Truncated preview text of the span" .
+
+# Function properties
+code:isAsync a owl:DatatypeProperty ;
+    rdfs:domain code:Function ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is async" ;
+    rdfs:comment "Function is async" .
+
+code:isGenerator a owl:DatatypeProperty ;
+    rdfs:domain code:Function ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is generator" ;
+    rdfs:comment "Function is generator" .
+
+code:isArrowFunction a owl:DatatypeProperty ;
+    rdfs:domain code:Function ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is arrow function" ;
+    rdfs:comment "Function is arrow function" .
+
+code:isExported a owl:DatatypeProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is exported" ;
+    rdfs:comment "Entity is exported" .
+
+code:isDefaultExport a owl:DatatypeProperty ;
+    rdfs:domain code:CodeEntity ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is default export" ;
+    rdfs:comment "Entity is default export" .
+
+# Method properties
+code:isStatic a owl:DatatypeProperty ;
+    rdfs:domain code:Method ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is static" ;
+    rdfs:comment "Method is static" .
+
+code:isPrivate a owl:DatatypeProperty ;
+    rdfs:domain code:Method ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is private" ;
+    rdfs:comment "Method is private" .
+
+code:isProtected a owl:DatatypeProperty ;
+    rdfs:domain code:Method ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is protected" ;
+    rdfs:comment "Method is protected" .
+
+code:isConstructor a owl:DatatypeProperty ;
+    rdfs:domain code:Method ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is constructor" ;
+    rdfs:comment "Method is constructor" .
+
+code:isGetter a owl:DatatypeProperty ;
+    rdfs:domain code:Method ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is getter" ;
+    rdfs:comment "Method is getter" .
+
+code:isSetter a owl:DatatypeProperty ;
+    rdfs:domain code:Method ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is setter" ;
+    rdfs:comment "Method is setter" .
+
+# Variable properties
+code:isConst a owl:DatatypeProperty ;
+    rdfs:domain code:Variable ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is const" ;
+    rdfs:comment "Variable is const" .
+
+code:isLet a owl:DatatypeProperty ;
+    rdfs:domain code:Variable ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is let" ;
+    rdfs:comment "Variable is let" .
+
+code:isVar a owl:DatatypeProperty ;
+    rdfs:domain code:Variable ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is var" ;
+    rdfs:comment "Variable is var" .
+
+code:hasScope a owl:DatatypeProperty ;
+    rdfs:domain code:Variable ;
+    rdfs:range xsd:string ;
+    rdfs:label "has scope" ;
+    rdfs:comment "Variable scope (global, function, block)" .
+
+code:initializationValue a owl:DatatypeProperty ;
+    rdfs:domain code:Variable ;
+    rdfs:range xsd:string ;
+    rdfs:label "initialization value" ;
+    rdfs:comment "Variable initialization value" .
+
+# Parameter properties
+code:isRestParameter a owl:DatatypeProperty ;
+    rdfs:domain code:Parameter ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is rest parameter" ;
+    rdfs:comment "Parameter is rest parameter (...args)" .
+
+code:isOptional a owl:DatatypeProperty ;
+    rdfs:domain code:Parameter ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is optional" ;
+    rdfs:comment "Parameter is optional" .
+
+code:hasDefaultValue a owl:DatatypeProperty ;
+    rdfs:domain code:Parameter ;
+    rdfs:range xsd:string ;
+    rdfs:label "has default value" ;
+    rdfs:comment "Parameter default value" .
+
+# Class properties
+code:isAbstract a owl:DatatypeProperty ;
+    rdfs:domain code:Class ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is abstract" ;
+    rdfs:comment "Class is abstract" .
+
+# Import properties
+code:modulePath a owl:DatatypeProperty ;
+    rdfs:domain code:Import ;
+    rdfs:range xsd:string ;
+    rdfs:label "module path" ;
+    rdfs:comment "Path to imported module" .
+
+code:importType a owl:DatatypeProperty ;
+    rdfs:domain code:Import ;
+    rdfs:range xsd:string ;
+    rdfs:label "import type" ;
+    rdfs:comment "Type of import (named, default, namespace)" .
+
+code:isTypeOnly a owl:DatatypeProperty ;
+    rdfs:domain code:Import ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is type only" ;
+    rdfs:comment "Import is type-only (TypeScript)" .
+
+# Export properties
+code:exportType a owl:DatatypeProperty ;
+    rdfs:domain code:Export ;
+    rdfs:range xsd:string ;
+    rdfs:label "export type" ;
+    rdfs:comment "Type of export (named, default, namespace)" .
+
+code:isReExport a owl:DatatypeProperty ;
+    rdfs:domain code:Export ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is re-export" ;
+    rdfs:comment "Export is re-export" .
+
+# Call expression properties
+code:callExpression a owl:DatatypeProperty ;
+    rdfs:domain code:CallExpression ;
+    rdfs:range xsd:string ;
+    rdfs:label "call expression" ;
+    rdfs:comment "Source text of call expression" .
+
+code:isMethodCall a owl:DatatypeProperty ;
+    rdfs:domain code:CallExpression ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is method call" ;
+    rdfs:comment "Call is method call" .
+
+# Type properties
+code:typeName a owl:DatatypeProperty ;
+    rdfs:domain code:Type ;
+    rdfs:range xsd:string ;
+    rdfs:label "type name" ;
+    rdfs:comment "Name of the type" .
+
+code:isArray a owl:DatatypeProperty ;
+    rdfs:domain code:Type ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is array" ;
+    rdfs:comment "Type is array type" .
+
+code:isGeneric a owl:DatatypeProperty ;
+    rdfs:domain code:Type ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is generic" ;
+    rdfs:comment "Type is generic" .
+
+# ========== Defined Individuals ==========
+
+# Common scopes
+code:GlobalScope a rdfs:Literal ;
+    rdfs:label "global" .
+
+code:FunctionScope a rdfs:Literal ;
+    rdfs:label "function" .
+
+code:BlockScope a rdfs:Literal ;
+    rdfs:label "block" .
+
+code:ClassScope a rdfs:Literal ;
+    rdfs:label "class" .
+
+# Common import types
+code:NamedImport a rdfs:Literal ;
+    rdfs:label "named" .
+
+code:DefaultImport a rdfs:Literal ;
+    rdfs:label "default" .
+
+code:NamespaceImport a rdfs:Literal ;
+    rdfs:label "namespace" .
+
+# Common export types
+code:NamedExport a rdfs:Literal ;
+    rdfs:label "named" .
+
+code:DefaultExport a rdfs:Literal ;
+    rdfs:label "default" .
+
+code:NamespaceExport a rdfs:Literal ;
+    rdfs:label "namespace" .
