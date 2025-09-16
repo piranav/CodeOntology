@@ -1,0 +1,1034 @@
+@prefix code: <http://codeontology.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs#import_import_eslintrc_3> a code:Import ;
+    code:hasName "import_eslintrc"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs#import_import_eslintrc_3"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs"^^xsd:string ;
+            code:lineNumber 3 ] ;
+    code:modulePath "@eslint/eslintrc"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs#import_import_path_1> a code:Import ;
+    code:hasName "import_path"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs#import_import_path_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "path"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs#import_import_url_2> a code:Import ;
+    code:hasName "import_url"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs#import_import_url_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "url"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs#module> a code:Module ;
+    code:hasBodyHash "07d48fd85eb9cecb"^^xsd:string ;
+    code:hasName "eslint.config"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/eslint.config.mjs"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/next.config.mjs#module> a code:Module ;
+    code:hasBodyHash "9f19dafaf73b64f8"^^xsd:string ;
+    code:hasName "next.config"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/next.config.mjs#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/next.config.mjs"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/postcss.config.mjs#module> a code:Module ;
+    code:hasBodyHash "141ef24ca27a99d0"^^xsd:string ;
+    code:hasName "postcss.config"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/postcss.config.mjs#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/postcss.config.mjs"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js#import_import_server_1> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js#import_import_server_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "@/lib/supabase/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js#import_import_server_2> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js#import_import_server_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "next/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js#module> a code:Module ;
+    code:hasBodyHash "1df99827c9835a5b"^^xsd:string ;
+    code:hasName "route"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/admin-signup/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js#import_import_server_1> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js#import_import_server_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "@/lib/supabase/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js#import_import_server_2> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js#import_import_server_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "next/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js#module> a code:Module ;
+    code:hasBodyHash "75a89ddb6f6670d5"^^xsd:string ;
+    code:hasName "route"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/auth/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js#import_import_server_1> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js#import_import_server_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "@/lib/supabase/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js#import_import_server_2> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js#import_import_server_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "next/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js#module> a code:Module ;
+    code:hasBodyHash "7266ebe676971758"^^xsd:string ;
+    code:hasName "route"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/[id]/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js#import_import_server_1> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js#import_import_server_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "@/lib/supabase/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js#import_import_server_2> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js#import_import_server_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "next/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js#module> a code:Module ;
+    code:hasBodyHash "a6f3b5ebb634d52d"^^xsd:string ;
+    code:hasName "route"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/blogs/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js#import_import_server_1> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js#import_import_server_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "@/lib/supabase/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js#import_import_server_2> a code:Import ;
+    code:hasName "import_server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js#import_import_server_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "next/server"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js#module> a code:Module ;
+    code:hasBodyHash "14c0b3586e182a56"^^xsd:string ;
+    code:hasName "route"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/api/upload/route.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/layout.js#import_import_google_1> a code:Import ;
+    code:hasName "import_google"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/layout.js#import_import_google_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/layout.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "next/font/google"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/layout.js#module> a code:Module ;
+    code:hasBodyHash "e66e2c237a8331cb"^^xsd:string ;
+    code:hasName "layout"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/layout.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/layout.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_About_8> a code:Import ;
+    code:hasName "import_About"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_About_8"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 8 ] ;
+    code:modulePath "@/components/sections/About"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_BlogList_9> a code:Import ;
+    code:hasName "import_BlogList"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_BlogList_9"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 9 ] ;
+    code:modulePath "@/components/sections/BlogList"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_BlogPost_10> a code:Import ;
+    code:hasName "import_BlogPost"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_BlogPost_10"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 10 ] ;
+    code:modulePath "@/components/sections/BlogPost"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_EditPostModal_5> a code:Import ;
+    code:hasName "import_EditPostModal"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_EditPostModal_5"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 5 ] ;
+    code:modulePath "@/components/modals/EditPostModal"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_Footer_2> a code:Import ;
+    code:hasName "import_Footer"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_Footer_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "@/components/Footer"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_Header_4> a code:Import ;
+    code:hasName "import_Header"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_Header_4"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 4 ] ;
+    code:modulePath "@/components/Header"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_Hero_11> a code:Import ;
+    code:hasName "import_Hero"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_Hero_11"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 11 ] ;
+    code:modulePath "@/components/sections/Hero"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_LoginModal_6> a code:Import ;
+    code:hasName "import_LoginModal"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_LoginModal_6"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 6 ] ;
+    code:modulePath "@/components/modals/LoginModal"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_NewPostModal_7> a code:Import ;
+    code:hasName "import_NewPostModal"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_NewPostModal_7"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 7 ] ;
+    code:modulePath "@/components/modals/NewPostModal"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_Work_12> a code:Import ;
+    code:hasName "import_Work"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_Work_12"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 12 ] ;
+    code:modulePath "@/components/sections/Work"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_client_13> a code:Import ;
+    code:hasName "import_client"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_client_13"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 13 ] ;
+    code:modulePath "@/lib/supabase/client"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_react_14> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_react_14"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 14 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_react_15> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#import_import_react_15"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 15 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#module> a code:Module ;
+    code:hasBodyHash "84da8393bdeb1215"^^xsd:string ;
+    code:hasName "page"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/app/page.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx#import_import_react_2> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx#import_import_react_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx#import_import_react_4> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx#import_import_react_4"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx"^^xsd:string ;
+            code:lineNumber 4 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx#import_import_react_5> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx#import_import_react_5"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx"^^xsd:string ;
+            code:lineNumber 5 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx#module> a code:Module ;
+    code:hasBodyHash "d0283a759e33c2fe"^^xsd:string ;
+    code:hasName "FilePicker"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/FilePicker.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Footer.jsx#module> a code:Module ;
+    code:hasBodyHash "52d8967d8dec886a"^^xsd:string ;
+    code:hasName "Footer"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Footer.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Footer.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Header.jsx#import_import_prop_types_2> a code:Import ;
+    code:hasName "import_prop-types"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Header.jsx#import_import_prop_types_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Header.jsx"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "prop-types"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Header.jsx#module> a code:Module ;
+    code:hasBodyHash "aef972444e1e609d"^^xsd:string ;
+    code:hasName "Header"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Header.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/Header.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_auto_2> a code:Import ;
+    code:hasName "import_auto"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_auto_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "chart.js/auto"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_dropcursor_4> a code:Import ;
+    code:hasName "import_extension-dropcursor"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_dropcursor_4"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 4 ] ;
+    code:modulePath "@tiptap/extension-dropcursor"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_gapcursor_5> a code:Import ;
+    code:hasName "import_extension-gapcursor"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_gapcursor_5"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 5 ] ;
+    code:modulePath "@tiptap/extension-gapcursor"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_image_6> a code:Import ;
+    code:hasName "import_extension-image"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_image_6"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 6 ] ;
+    code:modulePath "@tiptap/extension-image"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_table_7> a code:Import ;
+    code:hasName "import_extension-table"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_table_7"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 7 ] ;
+    code:modulePath "@tiptap/extension-table"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_table_cell_8> a code:Import ;
+    code:hasName "import_extension-table-cell"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_table_cell_8"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 8 ] ;
+    code:modulePath "@tiptap/extension-table-cell"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_table_header_9> a code:Import ;
+    code:hasName "import_extension-table-header"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_table_header_9"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 9 ] ;
+    code:modulePath "@tiptap/extension-table-header"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_table_row_10> a code:Import ;
+    code:hasName "import_extension-table-row"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_table_row_10"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 10 ] ;
+    code:modulePath "@tiptap/extension-table-row"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_text_align_11> a code:Import ;
+    code:hasName "import_extension-text-align"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_extension_text_align_11"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 11 ] ;
+    code:modulePath "@tiptap/extension-text-align"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_12> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_12"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 12 ] ;
+    code:modulePath "@tiptap/react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_13> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_13"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 13 ] ;
+    code:modulePath "@tiptap/react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_15> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_15"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 15 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_16> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_16"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 16 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_17> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_17"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 17 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_18> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_18"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 18 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_19> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_react_19"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 19 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_starter_kit_14> a code:Import ;
+    code:hasName "import_starter-kit"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#import_import_starter_kit_14"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 14 ] ;
+    code:modulePath "@tiptap/starter-kit"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#parameter_filter_507> a code:Parameter ;
+    code:hasName "filter"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#parameter_filter_507"^^xsd:anyURI ;
+    code:isOptional false ;
+    code:isRestParameter false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 507 ],
+        [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 507 ] .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#parameter_input_30> a code:Parameter ;
+    code:hasName "input"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#parameter_input_30"^^xsd:anyURI ;
+    code:isOptional false ;
+    code:isRestParameter false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 30 ],
+        [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 30 ] .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#parameter_onPick_507> a code:Parameter ;
+    code:hasName "onPick"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#parameter_onPick_507"^^xsd:anyURI ;
+    code:isOptional false ;
+    code:isRestParameter false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 507 ],
+        [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 507 ] .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#parameter_unsafe_20> a code:Parameter ;
+    code:hasName "unsafe"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#parameter_unsafe_20"^^xsd:anyURI ;
+    code:isOptional false ;
+    code:isRestParameter false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 20 ],
+        [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 20 ] .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx#import_import_FilePicker_3> a code:Import ;
+    code:hasName "import_FilePicker"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx#import_import_FilePicker_3"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx"^^xsd:string ;
+            code:lineNumber 3 ] ;
+    code:modulePath "@/components/FilePicker"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx#import_import_dynamic_1> a code:Import ;
+    code:hasName "import_dynamic"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx#import_import_dynamic_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "next/dynamic"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx#import_import_react_2> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx#import_import_react_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx#module> a code:Module ;
+    code:hasBodyHash "4e8613dc86a820ed"^^xsd:string ;
+    code:hasName "EditPostModal"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/EditPostModal.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/LoginModal.jsx#module> a code:Module ;
+    code:hasBodyHash "58965402bb3d0aa3"^^xsd:string ;
+    code:hasName "LoginModal"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/LoginModal.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/LoginModal.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx#import_import_FilePicker_3> a code:Import ;
+    code:hasName "import_FilePicker"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx#import_import_FilePicker_3"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx"^^xsd:string ;
+            code:lineNumber 3 ] ;
+    code:modulePath "@/components/FilePicker"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx#import_import_dynamic_1> a code:Import ;
+    code:hasName "import_dynamic"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx#import_import_dynamic_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "next/dynamic"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx#import_import_react_2> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx#import_import_react_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx#module> a code:Module ;
+    code:hasBodyHash "cde32bc17986e7f0"^^xsd:string ;
+    code:hasName "NewPostModal"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/modals/NewPostModal.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/About.jsx#module> a code:Module ;
+    code:hasBodyHash "d6f88bac5bf31a03"^^xsd:string ;
+    code:hasName "About"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/About.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/About.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogList.jsx#import_import_lucide_react_1> a code:Import ;
+    code:hasName "import_lucide-react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogList.jsx#import_import_lucide_react_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogList.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "lucide-react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogList.jsx#module> a code:Module ;
+    code:hasBodyHash "0b86d15220ce1f37"^^xsd:string ;
+    code:hasName "BlogList"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogList.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogList.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx#import_import_isomorphic_dompurify_1> a code:Import ;
+    code:hasName "import_isomorphic-dompurify"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx#import_import_isomorphic_dompurify_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "isomorphic-dompurify"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx#import_import_react_2> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx#import_import_react_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx#import_import_react_3> a code:Import ;
+    code:hasName "import_react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx#import_import_react_3"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx"^^xsd:string ;
+            code:lineNumber 3 ] ;
+    code:modulePath "react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx#module> a code:Module ;
+    code:hasBodyHash "1d11a83227e92eef"^^xsd:string ;
+    code:hasName "BlogPost"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/BlogPost.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Hero.jsx#import_import_lucide_react_1> a code:Import ;
+    code:hasName "import_lucide-react"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Hero.jsx#import_import_lucide_react_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Hero.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "lucide-react"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Hero.jsx#module> a code:Module ;
+    code:hasBodyHash "9a2b7a0f8dc0e12c"^^xsd:string ;
+    code:hasName "Hero"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Hero.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Hero.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Work.jsx#module> a code:Module ;
+    code:hasBodyHash "d3dd3eb9207bdbdc"^^xsd:string ;
+    code:hasName "Work"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Work.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/sections/Work.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/client.js#import_import_ssr_2> a code:Import ;
+    code:hasName "import_ssr"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/client.js#import_import_ssr_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/client.js"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "@supabase/ssr"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/client.js#module> a code:Module ;
+    code:hasBodyHash "e15abb42e3629e74"^^xsd:string ;
+    code:hasName "client"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/client.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/client.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js#import_import_headers_2> a code:Import ;
+    code:hasName "import_headers"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js#import_import_headers_2"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js"^^xsd:string ;
+            code:lineNumber 2 ] ;
+    code:modulePath "next/headers"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js#import_import_ssr_1> a code:Import ;
+    code:hasName "import_ssr"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js#import_import_ssr_1"^^xsd:anyURI ;
+    code:importType "named"^^xsd:string ;
+    code:isTypeOnly false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:modulePath "@supabase/ssr"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js#module> a code:Module ;
+    code:hasBodyHash "8888b95dcc057acc"^^xsd:string ;
+    code:hasName "server"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/lib/supabase/server.js"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_EmojiGrid_507> a code:Function ;
+    code:declaredIn <http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#module> ;
+    code:hasBodyHash "7193edffb5d4889e"^^xsd:string ;
+    code:hasName "EmojiGrid"^^xsd:string ;
+    code:hasScope "global"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_EmojiGrid_507"^^xsd:anyURI ;
+    code:isArrowFunction false ;
+    code:isAsync false ;
+    code:isDefaultExport false ;
+    code:isExported false ;
+    code:isGenerator false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 507 ] .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_escapeHtml_20> a code:Function ;
+    code:calledBy <http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_normalizeToHtml_30> ;
+    code:declaredIn <http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#module> ;
+    code:hasBodyHash "01947c29bba1bb2e"^^xsd:string ;
+    code:hasName "escapeHtml"^^xsd:string ;
+    code:hasScope "global"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_escapeHtml_20"^^xsd:anyURI ;
+    code:isArrowFunction false ;
+    code:isAsync false ;
+    code:isDefaultExport false ;
+    code:isExported false ;
+    code:isGenerator false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 20 ] .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_normalizeToHtml_30> a code:Function ;
+    code:calls <http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_escapeHtml_20> ;
+    code:declaredIn <http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#module> ;
+    code:hasBodyHash "a218dcddf25e1dc0"^^xsd:string ;
+    code:hasName "normalizeToHtml"^^xsd:string ;
+    code:hasScope "global"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_normalizeToHtml_30"^^xsd:anyURI ;
+    code:isArrowFunction false ;
+    code:isAsync false ;
+    code:isDefaultExport false ;
+    code:isExported false ;
+    code:isGenerator false ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 30 ] .
+
+<http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#module> a code:Module ;
+    code:defines <http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_EmojiGrid_507>,
+        <http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_escapeHtml_20>,
+        <http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#function_normalizeToHtml_30> ;
+    code:hasBodyHash "aee692a03bcde8d2"^^xsd:string ;
+    code:hasName "RichTextEditor"^^xsd:string ;
+    code:hasURI "http://codebase.local//Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx#module"^^xsd:anyURI ;
+    code:locatedAt [ a code:SourceLocation ;
+            code:columnNumber 0 ;
+            code:filePath "/Users/piranavakumar/Desktop/portfolio/portfolio/src/components/RichTextEditor.jsx"^^xsd:string ;
+            code:lineNumber 1 ] ;
+    code:moduleType "commonjs"^^xsd:string .
+
